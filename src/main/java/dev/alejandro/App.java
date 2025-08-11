@@ -1,17 +1,14 @@
 package dev.alejandro;
 
-/**
- * Hello world!
- */
-public final class App {
-    private App() {
-    }
-
-    /**
-     * Says hello to the world.
-     * @param args The arguments of the program.
-     */
+public class App {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        System.out.println("Días de la semana:");
+
+        DaysList daysList = new DaysList();
+        daysList.createDayList();
+
+        for (String day : daysList.getDays()) {
+            System.out.println(day);
+        }
     }
 }
